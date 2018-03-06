@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import labtest.pattrawut.androidthai.in.th.krirkshoppingmall.MainActivity;
 import labtest.pattrawut.androidthai.in.th.krirkshoppingmall.R;
 
 /**
@@ -27,6 +28,8 @@ public class RegisterFragment extends Fragment {
 
     private void createToolbar() {
         Toolbar toolbar = getView().findViewById(R.id.toolbarRegister);
+        ((MainActivity) getActivity()).setSupportActionBar(toolbar);
+
     }
 
     @Nullable
