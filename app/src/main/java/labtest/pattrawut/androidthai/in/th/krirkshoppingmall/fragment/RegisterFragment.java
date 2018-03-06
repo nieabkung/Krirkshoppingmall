@@ -10,6 +10,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 import labtest.pattrawut.androidthai.in.th.krirkshoppingmall.MainActivity;
 import labtest.pattrawut.androidthai.in.th.krirkshoppingmall.R;
@@ -42,7 +43,9 @@ public class RegisterFragment extends Fragment {
 
     private void uploadToserver() {
 
+//        get Value from Edittext
 
+        EditText editText
 
     }
 
@@ -72,7 +75,7 @@ public class RegisterFragment extends Fragment {
             }
         }};
 
-    }
+}
 
     @Nullable
     @Override
