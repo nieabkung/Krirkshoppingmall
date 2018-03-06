@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import labtest.pattrawut.androidthai.in.th.krirkshoppingmall.R;
 
@@ -14,6 +15,33 @@ import labtest.pattrawut.androidthai.in.th.krirkshoppingmall.R;
  */
 
 public class MainFragment extends Fragment {
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+//        Register Controller
+        registerController();
+
+
+
+    }   // End Main Method
+
+    private void registerController() {
+        TextView textView = getView().findViewById(R.id.txtNewRegister);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+//                Replace Fragment
+                getActivity().getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.contentMainFragment, new RegisterFragment())
+                        .commit();
+            }
+        });
+
+    }
 
     @Nullable
     @Override

@@ -60,6 +60,8 @@
 
         <!--New Register-->
         <TextView
+            android:id="@+id/txtNewRegister"
+            android:clickable="true"
             android:layout_marginTop="10dp"
             android:textStyle="italic"
             android:textSize="@dimen/h2"
