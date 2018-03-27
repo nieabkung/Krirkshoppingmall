@@ -6,4 +6,7 @@
     <string name="name">Name</string>
     <string name="message_have_space">Please fill all Blank</string>
     <string name="title_have_space">Have Space</string>
+
+    <string name="open">Open Drawer</string>
+    <string name="close">Close Drawer</string>
 </resources>

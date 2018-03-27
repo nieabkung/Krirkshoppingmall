@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import labtest.pattrawut.androidthai.in.th.krirkshoppingmall.R;
 
-/**
+/**n
  * Created by Pattrawut on 3/6/2018.
  */
 
@@ -25,7 +25,7 @@ public class MainFragment extends Fragment {
 
 
 
-    }   // End Main Method
+}   // End MaiMethod
 
     private void registerController() {
         TextView textView = getView().findViewById(R.id.txtNewRegister);
@@ -41,9 +41,9 @@ public class MainFragment extends Fragment {
             }
         });
 
-    }
 
-    @Nullable
+    };
+
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
