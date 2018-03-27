@@ -10,6 +10,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -44,7 +45,35 @@ public class RegisterFragment extends Fragment {
         radioController();
 
 
-    }   // Main Method
+    private void loginController() {
+        Button button = getView().findViewById(R.id.btnlogin);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                EditText userEdittext = getView().findViewById(R.id.edtUser);
+                EditText passwordEdittext = getView().findViewById(R.id.edtPassWord);
+
+                String userString = userEdittext.getText().toString().trim();
+                String passwordString = passwordEdittext.getText().toString().trim();
+
+                if (userString.isEmpty() || passwordString.isEmpty()) {
+
+                    MyAlert myAlert = new MyAlert(getActivity());
+                    myAlert.myDialog(getString(R.string.title_have_space),
+                            getString(R.string.message_have_space));
+                } else {
+
+
+                }
+
+            }
+        });
+
+    }
+
+
+}   // Main Method
 
     private void radioController() {
         RadioGroup radioGroup = getView().findViewById(R.id.ragMode);
